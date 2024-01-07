@@ -12,3 +12,11 @@ TODO: A log is kept of all changes
 ```
 yarn test:unit
 ```
+
+# Building
+
+```
+tsc
+```
+
+Then use the js files from the lib directory.
