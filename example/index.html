@@ -5,11 +5,17 @@
     <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/donedb@0.0.1/lib/bin/web/index.min.js"></script>
-<!-- <script type="module">
-import donedb from "https://cdn.jsdelivr.net/npm/donedb@0.0.1"
-console.log(donedb)
-</script> -->
-<script src="index.js"></script>
+<script type="module" src="index.js"></script>
+<h1>Welcome to the donedb example</h1>
+<input id="app" placeholder="Enter an app id" />
+<button id="done">done</button>
+<button id="generate">generate app id</button>
+<p>Create a new field/reset the existing one: <button id="create">create</button></p>
+<p>Click this button: <button id="watch">watch</button></p>
+<p>Look what happens<pre id="value"></pre></p>
+<p>Click this button: <button id="increment">increment</button></p>
+<p>Copy the app id, refresh the page, and paste in the id.</p>
+<p>Copy and paste this code anywhere!</p>
+<pre id="snippet"></pre>
 </body>
 </html>
