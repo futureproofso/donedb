@@ -9,7 +9,7 @@
   "jsdeliver": "lib/bin/web/index.js",
   "types": "lib/bin/web/index.d.ts",
   "files": [
-      "lib/**/*"
+    "lib/**/*"
   ],
   "scripts": {
     "build": "tsc",
@@ -48,7 +48,7 @@
     "ignore-loader": "^0.1.2",
     "mocha": "^10.2.0",
     "prettier": "^2.8.8",
-    "release-it": "^16.2.1",
+    "release-it": "^16.3.0",
     "script-loader": "^0.7.2",
     "text-encoding": "^0.7.0",
     "ts-jest": "^29.1.1",
