@@ -1,6 +1,6 @@
-import {DoneDbConfigOptions} from "../../src/config";
-import {DoneDbNodeConfig} from "../../src/node/config";
-import {DoneDbNodeClient} from "../../src/node/client";
+import {DoneDbConfigOptions} from "../../src/config.js";
+import {DoneDbNodeConfig} from "../../src/node/config.js";
+import {DoneDbNodeClient} from "../../src/node/client.js";
 export function createConfig(options?: DoneDbConfigOptions): DoneDbNodeConfig {
         return new DoneDbNodeConfig(options);
 }
