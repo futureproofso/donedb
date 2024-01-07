@@ -1,15 +1,19 @@
 {
   "name": "donedb",
   "version": "0.0.1",
+  "author": "@futureproofso",
+  "license": "MIT",
   "type": "module",
-  "private": true,
   "main": "lib/bin/web/index.js",
-    "types": "lib/bin/web/index.d.ts",
-    "files": [
-        "lib/**/*"
-    ],
+  "browser": "lib/bin/web/index.js",
+  "jsdeliver": "lib/bin/web/index.js",
+  "types": "lib/bin/web/index.d.ts",
+  "files": [
+      "lib/**/*"
+  ],
   "scripts": {
     "build": "tsc",
+    "example": "http-server ./example -c-1",
     "test:unit": "mocha",
     "test:integration": "webpack --config ./webpack.test.config.cjs && http-server ./test -c-1",
     "eject": "react-scripts eject",
