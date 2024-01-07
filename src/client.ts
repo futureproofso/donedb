@@ -65,7 +65,7 @@ export class DoneDbClient {
     const body = {
       field,
     };
-    const intervalMilliseconds = 60000;
+    let intervalMilliseconds = Math.max(this.config.watchDelay, 1) * 1000;
 
     let controller = new AbortController();
     let signal = controller.signal;

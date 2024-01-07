@@ -22,10 +22,12 @@ export class DoneDbConfig {
   authKey: string | undefined;
   metadata: string | undefined;
   filled: boolean;
+  watchDelay: number; // seconds
 
   constructor(polyfills: ConfigPolyfills, options?: DoneDbConfigOptions) {
     this._polyfills = polyfills;
     this.filled = false;
+    this.watchDelay = 1;
     this.app = options?.app;
     this.url = options?.url || "https://api.donedb.com";
     this.authKey = options?.authKey;
