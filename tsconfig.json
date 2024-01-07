@@ -6,7 +6,9 @@
       "dom.iterable",
       "esnext"
     ],
+    "outDir": "lib",
     "sourceMap": true,
+    "declaration": true,
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -21,11 +23,7 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src",
-    "tests"
+    "bin",
+    "test"
   ],
-  "exclude": [
-    "./src/aws-exports.js",
-    "./src/serviceWorkerRegistration.ts",
-  ]
 }

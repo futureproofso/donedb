@@ -1,18 +1,17 @@
 {
-  "name": "founder_s_log-pwa",
-  "version": "0.0.2",
+  "name": "donedb",
+  "version": "0.0.1",
   "type": "module",
   "private": true,
-  "dependencies": {
-    
-  },
+  "main": "lib/bin/web/index.js",
+    "types": "lib/bin/web/index.d.ts",
+    "files": [
+        "lib/**/*"
+    ],
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --watchAll=false",
+    "build": "tsc",
     "test:unit": "mocha",
     "test:integration": "webpack --config ./webpack.test.config.cjs && http-server ./test -c-1",
-    "run:scripts": "webpack --config ./webpack.scripts.config.cjs && http-server ./scripts -c-1",
     "eject": "react-scripts eject",
     "format": "prettier -w .",
     "release": "release-it"
@@ -37,7 +36,9 @@
   },
   "devDependencies": {
     "@types/chai": "^4.3.10",
+    "@types/jest": "^29.5.5",
     "@types/mocha": "^10.0.6",
+    "@types/node": "^16.18.38",
     "chai": "^4.3.10",
     "http-server": "^14.1.1",
     "ignore-loader": "^0.1.2",
@@ -49,8 +50,6 @@
     "ts-jest": "^29.1.1",
     "ts-loader": "^9.4.4",
     "ts-node": "^10.9.1",
-    "@types/jest": "^29.5.5",
-    "@types/node": "^16.18.38",
     "typescript": "^4.9.5",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"

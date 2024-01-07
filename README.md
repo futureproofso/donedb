@@ -1,4 +1,14 @@
 # DoneDb
-"Dundi B" like Cardi B
+> "Dundi B" like Cardi B
 
-## A rapper that gets your data tasks done
+## The wrapper that gets it done!
+
+You just need the correct account id (public) to create, get, and update
+
+TODO: A log is kept of all changes
+
+# Testing
+
+```
+yarn test:unit
+```
